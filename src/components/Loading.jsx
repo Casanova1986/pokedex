@@ -3,7 +3,7 @@ import React from 'react';
 class Loading extends React.Component {
 
     openGithub = () => {
-        window.open("https://github.com/s1varam/pokedex");
+        window.open("https://tudt.herokuapp.com/");
     }
 
     render() {

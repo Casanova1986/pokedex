@@ -30,10 +30,21 @@ Demo gif
 
 ## Run locally
 
-- Clone this repo
-- Run `npm install` and `npm start`
-- The application opens in `http://localhost:3000/` or any other available port
+Requires Node.js 22 LTS and npm. No API key or backend server is needed.
 
+```sh
+npm ci
+npm start
+```
+
+Open http://localhost:3000/ in your browser. The development server binds to
+127.0.0.1:3000, configured in `.env.development`. Stop it with Ctrl+C.
+
+An internet connection is required to load Pokemon data and images from PokeAPI.
+Run `npm run build` to create a production build.
+
+The start/build scripts enable the legacy OpenSSL provider required by this
+project's Webpack 4 toolchain on modern Node.js.
 ## To-do
 - Include some more Pokémon data - strengths, weaknesses, moves
 - Complex evolution chains (Eevee and the likes)
